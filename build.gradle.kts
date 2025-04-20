@@ -1,5 +1,7 @@
 plugins {
     `maven-publish`  // Подключаем плагин публикации
+    `java-library`
+    signing
     kotlin("jvm") version "2.0.21"
 }
 
@@ -14,7 +16,6 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             from(components["java"])
-//            from(components["kotlin"])
         }
     }
 }
