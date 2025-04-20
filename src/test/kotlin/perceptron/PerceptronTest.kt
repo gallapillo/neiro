@@ -1,3 +1,5 @@
+package perceptron
+
 import perteceptron.Perceptron
 import org.junit.Before
 import org.junit.Test
